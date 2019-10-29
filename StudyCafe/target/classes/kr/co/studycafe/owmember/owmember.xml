@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+ <mapper namespace="kr.co.studycafe.owmember.OWMemberMapper">
+ 
+	<insert id="owcreate" parameterType="OWMemberDTO">
+		INSERT INTO owmember (owid, owpasswd, owname, owgender, owbirth, owphone, owemail, owjoindate)
+		VALUES (#{owid}, #{owpasswd}, #{owname}, #{owgender}, #{owbirth}, #{owphone}, #{owemail}, sysdate)
+	</insert>
+	
+	<select id="owloginre" resultType="OWMemberDTO">
+	SELECT * FROM owmember
+	WHERE owid = #{owid}
+	</select>
+	
+	<select id="owread" parameterType="Integer" resultType="OWMemberDTO">
+	SELECT * FROM owmember
+	WHERE owid = #{owid}
+	</select>
+	
+	<update id="owloginup" >
+		UPDATE owmember
+		SET owid = #{owid}, owname = #{owname}, owbirth = #{owbirth}, owphone = #{owphone}, owemail = #{owemail}
+		WHERE owid = #{owid}
+	</update>
+	
+	<delete id="owloginde" >
+		DELETE FROM owmember
+		WHERE owid = #{owid}
+	</delete>
+	
+</mapper> 

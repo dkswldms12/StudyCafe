@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+/* sect03 : Farm To Table */
+.sect03 {
+	color: #fff;
+	text-align: center;
+	background: url('/Images/main/visual01.jpg') no-repeat center top;
+}
+
+.sect03 .sectInner {
+	position: relative;
+	height: 534px;
+}
+
+.sect03 .sectInner .discript {
+	padding: 130px 0 0;
+}
+
+.sect03 .sectInner .discript .tit {
+	padding: 0 0 20px;
+	background: url('/Images/main/tit_line_bot.png') no-repeat center bottom;
+}
+
+.sect03 .sectInner .discript .titCopy {
+	margin: 15px 0 0;
+}
+
+.sect03 .sectInner .discript .conTxt {
+	margin: 15px 0 0;
+}
+
+.sect03 .sectInner .btnMore {
+	position: absolute;
+	bottom: 65px;
+	left: 50%;
+	margin: 0 0 0 -22px;
+}
+
+.sect03 .sectInner .btnMore img {
+	width: 44px;
+	height: 44px;
+}
+
+/* sect04 : 처음 나오는 화면 */
+.sect04 {
+	text-align: center;
+}
+
+.sect04 .sectInner {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 10px 0 110px;
+}
+
+.sect04 .sectInner .discript .tit {
+	color: #711b04;
+}
+
+.sect04 .sectInner .discript .tit span {
+	display: inline-block;
+}
+
+.sect04 .sectInner .discript .titCopy {
+	margin: 20px 0 0;
+	font-weight: normal;
+	color: #1e1e1e;
+}
+
+.sect04 .sectInner .menuList {
+	overflow: hidden;
+	margin: 40px 0 0;
+}
+
+.sect04 .sectInner .menuList li {
+	float: left;
+	height: 256px;
+	list-style: none;
+}
+/* 신메뉴 */
+.sect04 .sectInner .menuList li.m01 {
+	width: 500px;
+	height: 515px;
+	margin: 0 3px 0 0;
+	background: #f7f7f7 url('../img/newMenu1.jpg') no-repeat center top;
+	list-style: none;
+}
+/* 공지사항 */
+.sect04 .sectInner .menuList li.m02 {
+	width: 290px;
+	margin: 0 3px 0 0;
+	background: #f7f7f7 url('') no-repeat center top;
+	list-style: none;
+}
+/* 새소식 */
+.sect04 .sectInner .menuList li.m03 {
+	width: 300px;
+	margin: 0 3px 0 0;
+	background: #f7f7f7 url('') no-repeat center top;
+	list-style: none;
+}
+/* 추천메뉴 */
+.sect04 .sectInner .menuList li.m04 {
+	width: 595px;
+	margin: 3px 3px 0 0;
+	background: #ffffff url('../img/recommendMenu1.jpg') no-repeat center top;
+	list-style: none;
+}
+
+.sect04 .sectInner .menuList li a {
+	display: block;
+	height: 65px;
+	padding: 195px 0 0;
+	text-decoration: none;
+}
+
+.sect04 .sectInner .menuList li.m01 a {
+	height: 65px;
+	padding: 450px 0 0;
+}
+
+.sect04 .sectInner .menuList li a strong {
+	display: block;
+	font-size: 17px;
+	color: #fbd399;
+}
+
+.sect04 .sectInner .menuList li a p {
+	margin: 5px 0 0;
+	font-size: 13px;
+	color: #c0c0c0;
+}
+
+/* discript common style */
+.discript .tit {
+	line-height: 40px;
+	font-size: 30px;
+}
+
+.discript .titCopy {
+	line-height: 27px;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.discript .conTxt {
+	line-height: 27px;
+	font-size: 14px;
+}
+
+/**********************************************
+*main - width:1200
+**********************************************/
+@media screen and (max-width:1200px) {
+	/* sect03 : Farm To Table */
+	.sect03 .sectInner .discript {
+		width: 740px;
+		margin: 0 auto;
+	}
+
+	/* sect04 : 중간 크기 */
+	.sect04 .sectInner {
+		width: 740px;
+	}
+	.sect04 .sectInner .discript .titCopy {
+		margin: 15px 0 0;
+	}
+	.sect04 .sectInner .menuList li {
+		height: 298px;
+	}
+	.sect04 .sectInner .menuList li.m01 {
+		width: 696px;
+		height: 300px;
+		margin: 4px 4px 0 0;
+		background: #f7f7f7 url('../img/newMenu2.jpg') no-repeat center top;
+	}
+	.sect04 .sectInner .menuList li.m02 {
+		width: 346px;
+		height: 300px;
+		margin: 4px 4px 0 0;
+		background: #f7f7f7 url('') no-repeat center top;
+	}
+	.sect04 .sectInner .menuList li.m03 {
+		width: 346px;
+		height: 300px;
+		margin: 4px 4px 0 0;
+		background: #f7f7f7 url('') no-repeat center top;
+	}
+	.sect04 .sectInner .menuList li.m04 {
+		width: 696px;
+		height: 300px;
+		margin: 4px 4px 0 0;
+		background: #f7f7f7 url('../img/recommendMenu2.jpg') no-repeat center top;
+	}
+	.sect04 .sectInner .menuList li a {
+		height: 73px;
+		padding: 225px 0 0;
+	}
+	.sect04 .sectInner .menuList li.m01 a {
+		height: 73px;
+		padding: 225px 0 0;
+	}
+}
+
+/**********************************************
+*main - width:720
+**********************************************/
+@media screen and (max-width:720px) {
+	/* sect03 : Farm To Table */
+	.sect03 {
+		color: #fff;
+		text-align: center;
+		background: url('/Images/main/visual01.jpg') no-repeat center top;
+		background-size: auto 400px;
+	}
+	.sect03 .sectInner {
+		position: relative;
+		height: 400px;
+	}
+	.sect03 .sectInner .discript {
+		width: 320px;
+		padding: 100px 0 0;
+	}
+	.sect03 .sectInner .discript .tit {
+		padding: 0 0 12px;
+		font-size: 23px;
+		line-height: 32px;
+		background: url('/Images/main/tit_line_bot.png') no-repeat center bottom;
+		background-size: 160px 1px
+	}
+	.sect03 .sectInner .discript .titCopy {
+		margin: 12px 0 0;
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.sect03 .sectInner .discript .conTxt {
+		margin: 15px 0 0;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.sect03 .sectInner .btnMore {
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		margin: 0 0 0 -17px;
+	}
+	.sect03 .sectInner .btnMore img {
+		width: 34px;
+		height: 34px;
+	}
+
+	/* sect04 : 최대한 줄인 크기 */
+	.sect04 .sectInner {
+		width: 300px;
+		padding: 40px 0 55px;
+	}
+	.sect04 .sectInner .discript .tit {
+		font-size: 23px;
+		line-height: 32px;
+	}
+	.sect04 .sectInner .discript .tit span {
+		display: block;
+	}
+	.sect04 .sectInner .discript .titCopy {
+		margin: 8px 0 0;
+		font-size: 13px;
+	}
+	.sect04 .sectInner .menuList {
+		margin: 30px 0 0;
+	}
+	/* .sect04 .sectInner .menuList li {height: 90px;} */
+	.sect04 .sectInner .menuList li.m01 {
+		width: 220px;
+		height: 170px;
+		margin: 2px 2px 0 0;
+		background: #f7f7f7 url('../img/newMenu3.jpg') no-repeat center top;
+	}
+	.sect04 .sectInner .menuList li.m02 {
+		width: 109px;
+		height: 170px;
+		margin: 2px 2px 0 0;
+		background: #f7f7f7 url('') no-repeat center top;
+	}
+	.sect04 .sectInner .menuList li.m03 {
+		width: 109px;
+		height: 170px;
+		margin: 2px 2px 0 0;
+		background: #f7f7f7 url('') no-repeat center top;
+	}
+	.sect04 .sectInner .menuList li.m04 {
+		width: 220px;
+		height: 170px;
+		margin: 2px 2px 0 0;
+		background: #f7f7f7 url('../img/recommendMenu3.jpg') no-repeat center top;
+	}
+	.sect04 .sectInner .menuList li a {
+		height: 68px;
+		padding: 110px 15px 0;
+	}
+	.sect04 .sectInner .menuList li.m01 a {
+		height: 54px;
+		padding: 105px 15px 0;
+	}
+	.sect04 .sectInner .menuList li a strong {
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.sect04 .sectInner .menuList li a p {
+		margin: 5px 0 0;
+		font-size: 11px;
+		line-height: 16px;
+	}
+}

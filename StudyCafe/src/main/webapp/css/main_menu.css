@@ -1,0 +1,104 @@
+/* main_menu.css */
+
+.container2 {
+	overflow: hidden;
+	background-color: #333;
+	font-family: 'Orienta', sans-serif;
+	font-weight: 570;
+	font-size: 13px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.container2 a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.drop {
+ 	float: left;
+	overflow: hidden;
+	text-align: center;
+	width: 20%;
+	min-width: 20%;  
+}
+
+.drop .dropbtn {
+	font-size: 14px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 10px 10px;
+	background-color: inherit;
+    cursor: pointer;
+	
+    position: relative;
+    display: inline-block;
+}
+
+.container2 a:hover, .drop:hover .dropbtn {
+	background-color: #3f3f3f;
+	width: 100%;
+	display: block;
+}
+
+.drop-content {
+	display: none;
+	position: absolute;
+	background-color: #3f3f3f;
+	width: 29%;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1; 
+}
+
+.drop-content a {
+	float: none;
+	color: white;
+	padding: 4px 4px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-size: 13px;
+}
+
+.drop-content a:hover {
+	width: 100%;
+}
+
+.drop:hover .drop-content {
+	display: block;
+}
+
+.drop-content .column {
+	width: 190px;
+	float: left;
+	color: white;
+	margin: 0 0 0 2.2%;
+}
+
+.drop-content .column ul {
+	padding: 4px 4px;
+	margin: 0;
+}
+
+.drop-content .column ul li {
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+}
+
+.drop-content .column h3 {
+	font-size: 14px;
+	padding: 13px 0;
+	margin: 5px 0 5px 0;
+	font-weight: 680;
+}
+
+.drop-content .column ul li a {
+	display: block;
+	padding: 0 0 15px 0;
+}

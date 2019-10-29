@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+ <mapper namespace="kr.co.studycafe.member.MemberMapper">
+ 
+   	<!-- <select id="list" resultType="MemberDTO">
+ 	SELECT gid, gname, gphone, gemail FROM gmember WHERE gid = #{gid}
+    </select> -->
+ 
+	<insert id="create" parameterType="MemberDTO">
+		INSERT INTO gmember (gid, gpasswd, gname, ggender, gbirth, gphone, gemail, gaddr1, gaddr2, gaddr3, gjoindate)
+		VALUES (#{gid}, #{gpasswd}, #{gname}, #{ggender}, #{gbirth}, #{gphone}, #{gemail}, #{gaddr1}, #{gaddr2}, #{gaddr3}, sysdate)
+	</insert>
+	
+	<select id="loginre" resultType="MemberDTO">
+	SELECT * FROM gmember
+	WHERE gid = #{gid}
+	</select>
+	
+	<select id="read" parameterType="Integer" resultType="MemberDTO">
+		SELECT * FROM gmember
+		WHERE gid = #{gid}
+	</select>
+	
+	<update id="loginup">
+		UPDATE gmember
+		SET gid = #{gid}, gname = #{gname}, gbirth = #{gbirth}, gphone = #{gphone}, gemail = #{gemail}, gaddr1 = #{gaddr1}, gaddr2 = #{gaddr2}, gaddr3 = #{gaddr3}
+		WHERE gid = #{gid}
+	</update>
+	
+	<delete id="loginde" parameterType="int">
+		DELETE FROM gmember
+		WHERE gid = #{gid}
+	</delete>
+	
+</mapper> 
